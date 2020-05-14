@@ -1,0 +1,23 @@
+{
+  "name": "node-knex-faker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "migration:create": "npx knex --knexfile ./knexfile.js migrate:make",
+    "migration:latest": "npx knex --knexfile ./knexfile.js migrate:latest",
+    "migration:rollback": "npx knex --knexfile ./knexfile.js migrate:rollback",
+    "seed:create": "npx knex --knexfile ./knexfile.js seed:make",
+    "seed": "npx knex --knexfile ./knexfile.js seed:run"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "faker": "^4.1.0",
+    "knex": "^0.21.1",
+    "morgan": "~1.9.1",
+    "node-sass-middleware": "0.11.0",
+    "sqlite3": "^4.2.0"
+  }
+}
